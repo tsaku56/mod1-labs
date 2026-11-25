@@ -26,7 +26,9 @@ public class Airport {
 		
 		if (currency.equals("USD") || currency.equals("EUR") || currency.equals("JPY")) {
 		    System.out.println("You've selected " + currency + ". ");
-		}
+		} else {
+			throw new IllegalArgumentException("Invalid currency.");
+		} 
 		
 // Find the amount, work out amount after serve fee, then tax fee and total amount ready for conversion	
 		
