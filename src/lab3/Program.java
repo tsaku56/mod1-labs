@@ -16,9 +16,7 @@ public class Program {
 		int kgweight = getInt("What be ye weight in keegee?");
 		convertKgsToStonesPounds(kgweight);	
 		
-	}
-		
-		
+	}	
 	
 	public static int getInt(String prompt) {
 		System.out.println(prompt);
@@ -38,8 +36,8 @@ public class Program {
 	}
 	
 	public static void convertInputToStonesPounds(int pounds) {
-		int stones = pounds % 14;
-		int remainpounds = pounds % (stones * 14);
+		int stones = pounds / 14;
+		int remainpounds = pounds % 14;
 		System.out.println(stones + " stone and " + remainpounds + " pounds!");
 	}
 	
