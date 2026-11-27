@@ -28,6 +28,13 @@ public class Program {
 		Account partnerAccount = myAccount;
 		
 		partnerAccount.getDetails();
+		
+		
 	}
+	
+	static void processAccount(Account acc){ 
+		acc.addInterest();
+	}
+
 
 }

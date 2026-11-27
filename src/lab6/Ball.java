@@ -1,0 +1,22 @@
+package lab6;
+
+public class Ball {
+	public int x, y, w, h;
+	private int dirX, dirY;
+	
+// Constructor
+	
+	public Ball(int x, int y, int w, int h, int dirX, int dirY) {
+		this.x = x;
+		this.y = y;
+		this.w = w;
+		this.h = h;
+		this.dirX = dirX;
+		this.dirY = dirY;
+	}
+
+	public void move() {
+		x += dirX;
+		y += dirY;
+	}
+}
